@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Dashboard"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorSecondary"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Registros -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Registros:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvTotalReg"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Total (kg):"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvTotalKg"
+                android:text="0.00 kg"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Último registro:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvUltimo"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Más valioso:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvMasValioso"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="% Reciclados:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvPorcentajeReciclados"
+                android:text="0%"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Ubicación frecuente:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvUbicacionFrecuente"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Categorías únicas:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvCategorias"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Más pesado:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvMasPesado"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Valor total:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvValorTotal"
+                android:text="$0"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Última ubicación:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvUltimaUbicacion"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Top categorías:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvTopCategorias"
+                android:text="-"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Residuo más frecuente -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Residuo más frecuente:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvResiduoFrecuente"
+                android:text="-"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Promedio peso -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Promedio peso:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvPromedioPeso"
+                android:text="0 kg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Promedio valor -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Promedio valor:"
+                android:textColor="@color/colorNeutral"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvValorPromedio"
+                android:text="S/ 0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/btnGenerarPDF"
+            android:text="Generar Reporte PDF"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
