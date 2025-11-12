@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">EcolimSac</string>
+    <string name="app_name">Ecolim</string>
+    <string-array name="tipos_residuos">
+        <item>Orgánico</item>
+        <item>Plástico</item>
+        <item>Vidrio</item>
+        <item>Metal</item>
+        <item>Papel</item>
+    </string-array>
+
+    <string-array name="categorias_residuos">
+        <item>Peligroso</item>
+        <item>No peligroso</item>
+        <item>Reciclable</item>
+        <item>No reciclable</item>
+    </string-array>
+
 </resources>
