@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="PrimaryButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AccentButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="TitleText" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+    <style name="BodyText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="RedMenuText" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:textColorPrimary">@color/red</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+</resources>
