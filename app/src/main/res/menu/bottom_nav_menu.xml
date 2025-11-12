@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/nav_registro"
+        android:icon="@drawable/ico_regis"
+        android:title="Registro" />
+
+    <item
+        android:id="@+id/nav_reportes"
+        android:icon="@drawable/ico_repo"
+        android:title="Reportes" />
+    <item
+        android:id="@+id/nav_usuario"
+        android:icon="@drawable/ic_person"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/nav_calculadora"
+        android:icon="@drawable/ic_calculadora"
+        android:title="Calculadora" />
+
+</menu>
