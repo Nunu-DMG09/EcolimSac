@@ -40,4 +40,23 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Agregamos dependencias extra en formato tradicional:
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+
+    // Room
+    implementation("androidx.room:room-runtime:2.6.1")
+    annotationProcessor("androidx.room:room-compiler:2.6.1")
+
+    // Para LiveData y ViewModel con Room (opcional pero recomendado)
+    implementation("androidx.lifecycle:lifecycle-livedata:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel:2.6.2")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
+
+    implementation("com.itextpdf:itextg:5.5.10")
 }
