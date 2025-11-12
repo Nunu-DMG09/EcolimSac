@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_logout"
+        android:title="Cerrar sesión"
+        android:icon="@drawable/ic_cerrar"
+        android:iconTint="@color/red"
+        android:showAsAction="always" />
+</menu>
